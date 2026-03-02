@@ -1131,7 +1131,7 @@ function showResult() {
     codeParts.push(`${letters[i]}${idx + 1}`);
   });
 
-  const finalPrompt = `${promptParts.join(", ")}, 高质量人像摄影, 9:16画幅`;
+  const finalPrompt = `${promptParts.join(", ")}, 高质量人像摄影, 9:16画幅,Negative Prompt: low quality, worst quality, blurry, out of focus, overexposed, underexposed, bad lighting, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, deformed hands, mutated limbs, long neck, broken waist, distorted body, incorrect proportions, extra legs, extra arms, flat face, asymmetrical eyes, poorly drawn face, plastic skin, oversharpened skin, unrealistic texture, jpeg artifacts, watermark, logo, text, cartoon, anime, manga, illustration, painting, sketch, lineart, comic, chibi, cel shading, flat shading, 3d, cgi, render, blender, unreal engine, toy, doll, plastic, stylized, lowpoly`;
   const finalCode = codeParts.join(",");
 
   promptText.innerText = finalPrompt;
@@ -1163,4 +1163,5 @@ function showResult() {
         // 初始化
         initLists();
     </script>
+
 
