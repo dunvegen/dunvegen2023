@@ -1127,7 +1127,7 @@ function showResult() {
     `;
     resultGrid.appendChild(cell);
 
-    promptParts.push(valueName);
+    promptParts.push(`${item.name}, ${item.desc}`);
     codeParts.push(`${letters[i]}${idx + 1}`);
   });
 
@@ -1163,3 +1163,4 @@ function showResult() {
         // 初始化
         initLists();
     </script>
+
